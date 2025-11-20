@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:layout_margin="@dimen/spacing_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <!-- Ícono grande del hábito -->
+        <ImageView
+            android:id="@+id/imgHabitIcon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/spacing_medium"
+            android:contentDescription="@string/icon_selection" />
+
+        <!-- Nombre del hábito -->
+        <TextView
+            android:id="@+id/txtHabitName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <!-- Fecha y hora -->
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_small" />
+
+        <!-- Ubicación -->
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_medium" />
+
+        <!-- Detalles adicionales -->
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/spacing_large" />
+
+        <!-- Botón Ver Hábito -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnViewHabit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="Ver Hábito"
+            style="@style/ButtonStylePrimary" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
